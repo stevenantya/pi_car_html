@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remote Control</title>
+  <link rel="stylesheet" href="pi_car.css">
+</head>
+<body>
+  <div class="container">
+    <div class="buttons">
+      <h1>Remote Control</h1>
+      <button onclick="sendCommand('front')">Ʌ</button>
+      <button onclick="sendCommand('stop')">O</button>
+      <button onclick="sendCommand('backward')">V</button>
+    </div>
+  </div>
+  
+  <script>
+    function sendCommand(command) {
+      // Here, you can define the logic to send the command to your remote device or perform any action
+      // For demonstration purposes, we'll just log the command to the console.
+      console.log('Command:', command);
+    }
+  </script>
+</body>
+</html>
